@@ -1,4 +1,4 @@
-.card {
+/* .card {
     width: 100px;
     height: 100px;
     margin: 10px 10px;
@@ -9,3 +9,44 @@
     width: 100px;
     height: 100px;
 }
+
+.sculptureCard {
+    width: 150px;
+    height: 150px;
+} */
+
+.card {
+    /* background: #fff; */
+    border-radius: 2px;
+    /* height: 325px; */
+    margin: 1rem;
+    position: relative;
+    /* width: 325px; */
+    box-shadow: 0 2px 4px #999, 0 2px 4px #999;
+    /* box-shadow: 0 3px 6px rgb(61, 253, 3), 0 3px 6px rgb(61, 253, 3); */
+    /* text-align: left; */
+  }
+  
+  .card > .img-container {
+    /* height: 60%; */
+    overflow: hidden;
+    /* text-align: center; */
+    /* background:#6CADDC; */
+  }
+  .card > .img-container > img {
+    width: 60%
+  }
+  
+  .card > .content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* font-size: 15px; */
+  }
+  
+  .card > .content > ul {
+    list-style-type: none;
+  }
+  
+  .card > .content > ul > li {
+    /* margin-top: 18px; */
+  }

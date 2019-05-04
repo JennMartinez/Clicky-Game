@@ -1,11 +1,61 @@
 .header {
-
+    color: rgb(0, 247, 255);
+    background-color: #2C323C;
+    /* min-height: 400px; */
+    padding: 21px 780px; 
+    /* padding-bottom: 140px; */
+    text-align: center;
+    border: 1px dashed rgb(3, 245, 23);
 }
 
 .title {
-
+    color: rgb(3, 245, 23);
+    font-family: 'Monoton', cursive;
+    /* font-family: 'Codystar', cursive; */
+    font-size: 63px; 
+    /* text-shadow:
+		-0.3px -0.3px 0 rgb(40, 239, 253),
+        0.3px -0.3px 0 rgb(40, 239, 253),
+        -0.3px 0.3px 0 rgb(40, 239, 253),
+        0.3px 0.3px 0 rgb(40, 239, 253); */
+    animation:blinkingText 2.5s infinite;
+    padding: 2px 77px; 
+    word-spacing: 2px;   
+}
+@keyframes blinkingText{
+	0%{		color: rgb(3, 245, 23)	}
+	49%{	color: transparent;	}
+	50%{	color: rgb(3, 245, 23)	}
+	99%{	color: transparent;	}
+	100%{	color: rgb(3, 245, 23)	}
 }
 
 .scoring {
+    color: fuchsia;
+    padding: 10px 7px;
+    font-family: 'Monoton', cursive;
+    font-size: 19px;
+    background-color: #2C323C;
+    border: 1px dashed rgb(3, 245, 23);
+    word-spacing: 2px;
+}
 
+.high {
+    color: rgb(236, 112, 10);
+    padding: 10px 7px;
+    font-family: 'Monoton', cursive;
+    font-size: 19px;
+    background-color: #2C323C;
+    border: 1px dashed rgb(3, 245, 23);
+    word-spacing: 2px;
+}
+
+.subtitle {
+    padding: 27px;
+    font-size: 15px; 
+    font-family: 'Monoton', cursive;
+    color: rgb(3, 245, 23);
+    /* background-color: rgba(0, 47, 255, 0.349); */
+    /* border: 1px dashed rgb(3, 245, 245); */
+    word-spacing: 3px;
 }

@@ -17,6 +17,47 @@ class Abstract extends React.Component {
     correctIncorrectClicks: "",
 };
 
+// Function that executes the onClick event for each image chosen //
+
+// Heroes = (props) => {
+//   return (
+//     <div className="card">
+//       <div className="img-container">
+//         <img
+//           onClick={() => props.handleClick(props.id)}
+//           alt={props.name}
+//           src={props.image}
+//         />
+//       </div>
+//       <div className="content">
+//         <strong>{props.name}</strong>
+//       </div>
+//     </div>
+//   );
+// }
+
+// handleClick = id => {
+//   this.state.Data.find((hero, i) => {
+//     if (hero.id === id) {
+//       if (Data[i].count === 0) {
+//         Data[i].count += 1;
+//         this.setState(
+//           {
+//             score: this.state.score + 1
+//           },
+//           function() {
+//             console.log(this.state.score);
+//           }
+//         );
+//         this.state.Data.sort(() => Math.random() - 0.5);
+//         return true;
+//       } else {
+//         this.gameOver();
+//       }
+//     }
+//   });
+// };
+
 // Function that executes shuffling the images at random //
 
 shuffleImages = (array) => {
@@ -77,10 +118,10 @@ render() {
       <Header
       title="Abstract React"
       score={this.state.score}
-      highScore={this.state.highScore} />
-
+      highScore={this.state.highScore} /> 
+      
     <div className="subtitle">
-      Choose and click an image for one point. Do not choose the same image twice, otherwise, game over!
+      Click  an  image  for  one  point.  Do  not  choose  the  same  image  twice,  otherwise,  game over!
     </div>
 
      <Container>
