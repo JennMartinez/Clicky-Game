@@ -1,50 +1,62 @@
 [
     {
         "id": 1,
-        "image": "/assets/images/abstract17.gif"
+        "image": "/assets/images/abstract17.gif",
+        "count": 0
     },
     {
         "id": 2,
-        "image": "/assets/images/abstract32.gif"
+        "image": "/assets/images/abstract32.gif",
+        "count": 0
     },
     {
         "id": 3,
-        "image": "/assets/images/abstract15.gif"
+        "image": "/assets/images/abstract15.gif",
+        "count": 0
     },
     {
         "id": 4,
-        "image": "/assets/images/abstract21.gif"
+        "image": "/assets/images/abstract21.gif",
+        "count": 0
     },
     {
         "id": 5,
-        "image": "/assets/images/abstract27.gif"
+        "image": "/assets/images/abstract27.gif",
+        "count": 0
     },
     {
         "id": 6,
-        "image": "/assets/images/abstract30.gif"
+        "image": "/assets/images/abstract30.gif",
+        "count": 0
     },
     {
         "id": 7,
-        "image": "/assets/images/abstract43.gif"
+        "image": "/assets/images/abstract43.gif",
+        "count": 0
     },
     {
         "id": 8,
-        "image": "/assets/images/abstract37.gif"
+        "image": "/assets/images/abstract37.gif",
+        "count": 0
     },
     {
         "id": 9,
-        "image": "/assets/images/abstract24.gif"
+        "image": "/assets/images/abstract24.gif",
+        "count": 0
     },
     {
         "id": 10,
-        "image": "/assets/images/abstract26.gif"
+        "image": "/assets/images/abstract26.gif",
+        "count": 0
     },
     {
         "id": 11,
-        "image": "/assets/images/abstract39.gif"
+        "image": "/assets/images/abstract39.gif",
+        "count": 0
     },
     {
         "id": 12,
-        "image": "/assets/images/abstract6.gif"
+        "image": "/assets/images/abstract6.gif",
+        "count": 0
     }
 ]

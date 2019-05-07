@@ -17,47 +17,6 @@ class Abstract extends React.Component {
     correctIncorrectClicks: "",
 };
 
-// Function that executes the onClick event for each image chosen //
-
-// Heroes = (props) => {
-//   return (
-//     <div className="card">
-//       <div className="img-container">
-//         <img
-//           onClick={() => props.handleClick(props.id)}
-//           alt={props.name}
-//           src={props.image}
-//         />
-//       </div>
-//       <div className="content">
-//         <strong>{props.name}</strong>
-//       </div>
-//     </div>
-//   );
-// }
-
-// handleClick = id => {
-//   this.state.Data.find((hero, i) => {
-//     if (hero.id === id) {
-//       if (Data[i].count === 0) {
-//         Data[i].count += 1;
-//         this.setState(
-//           {
-//             score: this.state.score + 1
-//           },
-//           function() {
-//             console.log(this.state.score);
-//           }
-//         );
-//         this.state.Data.sort(() => Math.random() - 0.5);
-//         return true;
-//       } else {
-//         this.gameOver();
-//       }
-//     }
-//   });
-// };
-
 // Function that executes shuffling the images at random //
 
 shuffleImages = (array) => {
@@ -80,37 +39,49 @@ scoreIncrease = () => {
     this.setState({ highScore: newScore });
   }
   else if (newScore === 12) {
-    this.setState({ correctIncorrectClicks: "Celebrate! You have won!"});
+    this.setState({ correctIncorrectClicks: "You won!"});
   }
   this.shuffle();
 };
 
-// Decreases score //
+// Function that executes the onClick event for each image chosen //
 
-imagesClicked = (id) => {
-  if (this.state.chosenMonuments.indexOf(id) === -1) {
-    this.scoreIncrease();
-    this.setState({ chosenMonuments: this.state.chosenMonuments.concat(id) });
-  } else {
-    this.scoreReset();
-  }
+imagesClicked = id => {
+  this.state.Monuments.find((ar, i) => {
+    if (ar.id === id) {
+      if (Monuments[i].count === 0) {
+        Monuments[i].count = Monuments[i].count + 1;
+        this.setState(
+          {
+            score: this.state.score + 1
+          },
+          function() {
+            console.log(this.state.score);
+          });
+        this.state.Monuments.sort(() => Math.random() - 0.5);
+        return true;
+      } else {
+        this.imageReset();
+      }
+    }
+  });
 };
 
 // Resets the page with scores and images //
 
 imageReset = () => {
-  this.setState({
-    score: 0,
-    highScore: this.state.highScore,
-    correctIncorrectClicks: "Sorry, you have lost!",
-    chosenMonuments: [],
+  if (this.state.score > this.state.highScore) {
+    this.setState({highScore: this.state.score}, function() {
+      console.log(this.state.highscore);
+    });
+  }
+  this.state.Monuments.forEach(Monument => {
+    Monument.count = 0;
   });
-  this.shuffle();
-};
-
-shuffle = () => {
-  this.setState({ SculptureCard: this.shuffleImages(SculptureCard) });
-};
+  // alert(`Game Over! :(\nscore: ${this.state.score}`);
+  this.setState({score: 0});
+  return true;
+}
 
 render() {
   return (
@@ -121,14 +92,14 @@ render() {
       highScore={this.state.highScore} /> 
       
     <div className="subtitle">
-      Click  an  image  for  one  point.  Do  not  choose  the  same  image  twice,  otherwise,  game over!
+      Click an image for one point. Do not choose the same image twice. Otherwise, game over!
     </div>
 
      <Container>
         {this.state.Monuments.map(monument => (
           <SculptureCard
             key={monument.id}
-            imagesClicked={monument.imagesClicked}
+            imagesClicked={this.imagesClicked}
             scoreIncrease={monument.scoreIncrease}
             imageReset={monument.imageReset}
             shuffle={monument.shuffle}
