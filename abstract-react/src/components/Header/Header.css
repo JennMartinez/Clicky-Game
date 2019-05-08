@@ -13,7 +13,7 @@
     font-family: 'Monoton', cursive;
     font-size: 63px; 
     animation:blinkingText 3.7s infinite;
-    padding: 2px 0px; 
+    padding: 6px 0px; 
     word-spacing: 5px;  
     margin-right: 20px;
     margin-left: 20px; 
@@ -56,7 +56,5 @@
     font-size: 15px; 
     font-family: 'Monoton', cursive;
     color: rgb(3, 245, 23);
-    /* background-color: rgba(0, 47, 255, 0.349); */
-    /* border: 1px dashed rgb(3, 245, 245); */
     word-spacing: 7px;
 }
