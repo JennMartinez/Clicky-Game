@@ -78,7 +78,6 @@ imageReset = () => {
   this.state.Monuments.forEach(Monument => {
     Monument.count = 0;
   });
-  // alert(`Game Over! :(\nscore: ${this.state.score}`);
   this.setState({score: 0});
   return true;
 }
@@ -104,7 +103,6 @@ render() {
             imageReset={monument.imageReset}
             shuffle={monument.shuffle}
             id={monument.id}
-            // name={monument.name}
             image={monument.image} 
             />
         ))} 
