@@ -1,9 +1,6 @@
 .header {
     background-color: #2C323C;
-    /* background-color: rgb(68, 72, 78); */
-    /* min-height: 400px; */
     padding: 21px 780px; 
-    /* padding-bottom: 140px; */
     text-align: center;
     border: 1px dashed rgb(3, 245, 23);
 }

@@ -2,32 +2,7 @@
     border-radius: 2px;
     margin: 1rem;
     position: relative;
-    /* box-shadow: 0 2px 4px #999, 0 2px 4px #999; */
     box-shadow: 0 3px 6px #2C323C, 0 3px 6px #2C323C;
-    /* border: 5px solid rgba(3, 245, 23, 0.712); */
-  
-  /* #2 */
-  /* padding: 2px;
-  background: 2px solid rgb(3, 245, 23); */
-  
-  /* #3 */
-  /* outline: 5px solid rgba(3, 245, 23, 0.425); */
-  
-  /* #4 AND INFINITY!!! (CSS3 only) */
-  /* box-shadow:
-      0 0 0 10px rgba(3, 245, 23, 0.192),
-      0 0 0 15px rgb(3, 245, 23, 0.068); */
-
-      /* -moz-box-shadow: 0 0 5px #999;
--webkit-box-shadow: 0 0 5px #999;
-box-shadow: 0 0 5px #999; */
-
-/* -moz-box-shadow: 0 0 4px rgb(3, 245, 23);
--webkit-box-shadow: 0 0 4px rgb(3, 245, 23);
-box-shadow: 0 0 4px rgb(3, 245, 23); */
-
-  /* border: 1px dashed rgb(3, 245, 23); */
-
   }
   
   .card.img-container {
