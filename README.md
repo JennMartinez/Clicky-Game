@@ -10,7 +10,7 @@ https://jennmartinez.github.io/Clicky-Game/
 
 **Below is a screenshot of the burgers available from the "Burger Menu.**
 
-![Image of menu](./public/assets/images/abstractreact.jpg)
+![Image of menu](../public/assets/images/abstractreact.jpg)
 
 
 
