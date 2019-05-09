@@ -10,7 +10,7 @@ https://jennmartinez.github.io/Clicky-Game/
 
 **Below is a screenshot of the Abstract React Game.**
 
-![Image of abstractreact](//public/assets/images/abstractreact.jpg)
+![Image of abstractreact](abstract-react/public/assets/images/abstractreact.jpg)
 
 
 
