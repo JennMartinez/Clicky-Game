@@ -8,9 +8,9 @@
 
 https://jennmartinez.github.io/Clicky-Game/
 
-**Below is a screenshot of the burgers available from the "Burger Menu.**
+**Below is a screenshot of the Abstract React Game.**
 
-![Image of abstractreact](/public/assets/images/abstractreact.jpg)
+![Image of abstractreact](//public/assets/images/abstractreact.jpg)
 
 
 
