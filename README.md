@@ -6,7 +6,7 @@
 
 **The link below will take the user directly to the game**
 
-https://jennmartinez.github.io/Clicky-Game/
+http://localhost:3000/
 
 **Below is a screenshot of the Abstract React Game.**
 
