@@ -4,9 +4,9 @@
 
 - This app was built with **React.**
 
-**The link below will take the user directly to the game**
+**Heroku** is used to deploy the **Abstract React Game.**
 
-http://localhost:3000/
+https://evening-dusk-53677.herokuapp.com/
 
 **Below is a screenshot of the Abstract React Game.**
 
